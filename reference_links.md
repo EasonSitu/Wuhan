@@ -1,0 +1,26 @@
+# 资料与链接清单
+
+以下是当前网页中使用或保留的主要资料入口。Codex 后续应优先保留官方/权威来源，并把普通游记/平台内容只作为灵感参考。
+
+1. [城市渊源](#origin)
+2. [三镇](#towns)
+3. [历史建筑](#stories)
+4. [风土人情](#local)
+5. [行程解剖](#trip)
+6. [手信](#gifts)
+7. [资料](#sources)
+8. [江汉关大楼条目](https://zh.wikipedia.org/wiki/%E6%B1%9F%E6%B1%89%E5%85%B3%E5%A4%A7%E6%A5%BC)
+9. [查看地方志原文](https://dfz.wuhan.gov.cn/sqgk/whsq/)
+10. [江汉关地图](https://www.amap.com/search?query=%E6%B1%9F%E6%B1%89%E5%85%B3)
+11. [黎黄陂路地图](https://www.amap.com/search?query=%E9%BB%8E%E9%BB%84%E9%99%82%E8%B7%AF)
+12. [辛亥革命博物院](https://www.1911museum.cn/list_37.html)
+13. [湖北省博物馆服务页](http://www.hbww.org.cn/fuwu/index.html)
+14. [晴川阁](https://www.amap.com/search?query=%E6%99%B4%E5%B7%9D%E9%98%81)
+15. [张之洞与武汉博物馆](https://www.amap.com/search?query=%E5%BC%A0%E4%B9%8B%E6%B4%9E%E4%B8%8E%E6%AD%A6%E6%B1%89%E5%8D%9A%E7%89%A9%E9%A6%86)
+16. [粮道街](https://www.amap.com/search?query=%E7%B2%AE%E9%81%93%E8%A1%97)
+17. [山海关路](https://www.amap.com/search?query=%E5%B1%B1%E6%B5%B7%E5%85%B3%E8%B7%AF%20%E6%AD%A6%E6%B1%89)
+18. [武汉关码头](https://www.amap.com/search?query=%E6%AD%A6%E6%B1%89%E5%85%B3%E7%A0%81%E5%A4%B4)
+19. [东湖官网](https://www.whdonghu.gov.cn/)
+20. [周黑鸭官网](https://www.zhouheiya.cn/)
+21. [湖北省博物馆｜Wikimedia/Wikipedia 图源入口](https://en.wikipedia.org/wiki/Hubei_Provincial_Museum)
+22. [武汉市政府门户网站转载长江日报｜桃花岛过早](https://www.wuhan.gov.cn/sy/whyw/202311/t20231111_2299332.shtml)

@@ -1,0 +1,7 @@
+.superpowers/
+preview/
+server.*.log
+*.log
+backups/
+.DS_Store
+Thumbs.db
