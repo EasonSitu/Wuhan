@@ -63,15 +63,6 @@ def zone(draw, box, title, subtitle, fill):
     draw.rounded_rectangle(box, radius=42, fill=fill + (172,), outline=(255, 250, 243, 125), width=2)
 
 
-def small_landmark(draw, lon, lat, text, label_xy):
-    x, y = xy(lon, lat)
-    bx, by = label_xy
-    draw.ellipse((x - 9, y - 9, x + 9, y + 9), fill=COLORS["red"], outline=COLORS["paper"], width=4)
-    draw.line((x, y, bx, by + 15), fill=COLORS["red"], width=2)
-    draw.rounded_rectangle((bx - 12, by - 8, bx + 190, by + 42), radius=14, fill=(255, 250, 243, 210), outline=COLORS["line"], width=1)
-    draw.text((bx, by), text, font=F_TINY, fill=COLORS["ink"])
-
-
 if BG.exists():
     img = Image.open(BG).convert("RGBA").resize((W, H))
     veil = Image.new("RGBA", (W, H), COLORS["bg"] + (102,))
@@ -82,7 +73,7 @@ draw = ImageDraw.Draw(img, "RGBA")
 
 draw.rounded_rectangle((78, 38, 1248, 164), radius=30, fill=(255, 250, 243, 188))
 draw.text((106, 58), "武汉三镇格局位置图", font=F_TITLE, fill=COLORS["ink"])
-draw.text((108, 124), "参考高德地图截图校正走向：长江自西南向东北，汉江自西北汇入。", font=F_SUB, fill=COLORS["muted"])
+draw.text((108, 124), "一张图只讲一件事：长江与汉江交汇，分出汉口、汉阳、武昌。", font=F_SUB, fill=COLORS["muted"])
 
 # Soft town areas, aligned to the real relation of the two rivers.
 zone(draw, (138, 188, 735, 480), "汉口", "商埠 / 码头 / 租界 / 夜宵", COLORS["hankou"])
@@ -119,20 +110,19 @@ draw.text(xy(114.330, 30.604), "长江", font=F_SMALL, fill=(255, 250, 243, 238)
 draw.text(xy(114.217, 30.610), "汉江", font=F_SMALL, fill=(255, 250, 243, 238))
 
 # Redraw town labels above the river strokes for readability.
-draw.text((176, 244), "汉口", font=F_LABEL, fill=COLORS["ink"])
-draw.text((178, 308), "商埠 / 码头 / 租界 / 夜宵", font=F_SMALL, fill=COLORS["muted"])
-draw.text((154, 660), "汉阳", font=F_LABEL, fill=COLORS["ink"])
-draw.text((156, 724), "知音 / 晴川 / 工业 / 汉阳造", font=F_SMALL, fill=COLORS["muted"])
-draw.text((940, 485), "武昌", font=F_LABEL, fill=COLORS["ink"])
-draw.text((942, 549), "省城 / 首义 / 楚文化 / 东湖", font=F_SMALL, fill=COLORS["muted"])
+draw.rounded_rectangle((158, 246, 508, 350), radius=24, fill=(255, 250, 243, 205), outline=COLORS["line"], width=2)
+draw.text((184, 260), "汉口", font=F_LABEL, fill=COLORS["ink"])
+draw.text((286, 276), "商埠 · 码头 · 租界", font=F_SMALL, fill=COLORS["muted"])
+draw.rounded_rectangle((140, 672, 536, 776), radius=24, fill=(255, 250, 243, 205), outline=COLORS["line"], width=2)
+draw.text((166, 686), "汉阳", font=F_LABEL, fill=COLORS["ink"])
+draw.text((268, 702), "知音 · 晴川 · 工业", font=F_SMALL, fill=COLORS["muted"])
+draw.rounded_rectangle((930, 488, 1325, 592), radius=24, fill=(255, 250, 243, 205), outline=COLORS["line"], width=2)
+draw.text((956, 502), "武昌", font=F_LABEL, fill=COLORS["ink"])
+draw.text((1058, 518), "省城 · 首义 · 东湖", font=F_SMALL, fill=COLORS["muted"])
 
 cx, cy = xy(114.289, 30.568)
 draw.ellipse((cx - 13, cy - 13, cx + 13, cy + 13), fill=COLORS["gold"], outline=COLORS["paper"], width=4)
 draw.text((cx + 18, cy - 34), "两江交汇", font=F_TINY, fill=COLORS["ink"])
-
-small_landmark(draw, 114.292, 30.574, "江汉关 / 轮渡", (610, 382))
-small_landmark(draw, 114.310, 30.544, "首义 / 黄鹤楼", (910, 710))
-small_landmark(draw, 114.265, 30.553, "晴川阁", (210, 828))
 
 # North arrow.
 draw.polygon([(1412, 86), (1392, 136), (1432, 136)], fill=COLORS["ink"])
