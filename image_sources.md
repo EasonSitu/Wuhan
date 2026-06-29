@@ -68,3 +68,7 @@
 22. **武汉过早店铺现场**  
    https://news.cjn.cn/whpd/yw_19947/202311/W020231111468706840650.jpeg
 
+23. **武汉长江轮渡上看长江大桥**
+   本地文件：`assets/images/local-wuhan-ferry.jpg`
+   来源：https://commons.wikimedia.org/wiki/Special:Redirect/file/People%20on%20the%20Ferry%20in%20Wuhan.jpg
+
